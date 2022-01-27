@@ -1,0 +1,19 @@
+
+body{
+    animation: body-color-change 4s  infinite alternate;
+}
+
+@keyframes body-color-change {
+    0%{
+        background:  #ffe3f0;
+    }
+    25%{
+        background:#fff7c8;
+    }
+    50%{
+        background: #e1fba9;
+    }
+    100%{
+        background:#c4ffe6;
+    }
+}
