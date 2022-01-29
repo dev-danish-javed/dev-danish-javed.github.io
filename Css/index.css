@@ -2,7 +2,9 @@
 body{
     animation: body-color-change 4s  infinite alternate;
 }
-
+img{
+    animation: up-and-down 4s infinite alternate;
+}
 @keyframes body-color-change {
     0%{
         background:  #ffe3f0;
@@ -15,5 +17,14 @@ body{
     }
     100%{
         background:#c4ffe6;
+    }
+}
+@keyframes up-and-down {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{       
+        transform: translateY(20px);
+
     }
 }
