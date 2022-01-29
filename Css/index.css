@@ -7,16 +7,16 @@ img{
 }
 @keyframes body-color-change {
     0%{
-        background:  #ffe3f0;
+        background:  peachpuff;
     }
     25%{
-        background:#fff7c8;
+        background:papayawhip;
     }
     50%{
-        background: #e1fba9;
+        background: mistyrose;
     }
     100%{
-        background:#c4ffe6;
+        background:azure;
     }
 }
 @keyframes up-and-down {
