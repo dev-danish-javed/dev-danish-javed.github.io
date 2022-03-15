@@ -1,8 +1,10 @@
 
 body{
     animation: body-color-change 4s  infinite alternate;
+    height: 80vh;
+    width:100vh;
 }
-img{
+.main img{
     animation: up-and-down 4s infinite alternate;
 }
 @keyframes body-color-change {
