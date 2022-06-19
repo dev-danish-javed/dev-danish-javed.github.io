@@ -1,6 +1,12 @@
 let audioIndex = 0;
 
 let initializeAudioPlayer = () => {
+   
+    [...document.getElementsByClassName("audio-thumbnail")].forEach(thumbnail =>
+        thumbnail.insertAdjacentHTML("afterbegin", '<img class="disk-image animate-opacity" src="./images/cd clipart.png" alt="">'));
+    getAudio().addEventListener("timeupdate", setProgressBar);
+    getAudio().addEventListener("ended", handleAudioEnd);
+    setBackground();
     showAudioView();
     enableDisableButtons();
 }
@@ -8,36 +14,36 @@ let getAudio=() => {
     return document.getElementsByClassName('audio-container')[audioIndex].getElementsByTagName('audio')[0];
 }
 let playAudio = () => {
-    stopAudio();
     getAudio().play();
     setView();
+    setProgressBar(true);
 }
 let pauseAudio = () => {
     getAudio().pause();
     showHideButtons();
+    handleDiskRotation();
 }
 let stopAudio = () => {
     getAudio().load();
     showHideButtons();
+    handleDiskRotation();
+    setProgressBar(true);
 }
 let playPrevious = () => {
-    pauseAudio();
+    stopAudio();
     audioIndex--;
     playAudio();
 }
 let playNext = () => {
-    pauseAudio();
+    stopAudio();
     audioIndex++;
     playAudio();
 }
 let setBackground = () => {
     let thumbnail = document.getElementsByClassName('audio-container')[audioIndex].getElementsByClassName('audio-thumbnail')[0];
-    let thumbnailImage = thumbnail.getElementsByTagName('img')[0].getAttribute('src');
-    document.body.style.backgroundImage = "url('" + thumbnailImage + "')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundRepeat = "round";
-    document.body.style.backgroundClip = "padding-box";
-    document.body.style.backdropFilter = "blur(10px)";
+    let thumbnailImage = thumbnail.getElementsByClassName('thumbnail')[0].getAttribute('src');
+    let cover = document.getElementById("thumbnailBlurLayer");
+    cover.style.backgroundImage = "url('" + thumbnailImage + "')";
 }
 let showAudioView = () => {
     [...document.getElementsByClassName('audio-container')].forEach(audio => {
@@ -66,9 +72,44 @@ let showHideButtons=() => {
         document.getElementById('pauseButton').classList.remove('hidden');
     }
 }
+let setProgressBar = (flag) => {
+    
+    let audio = getAudio();
+    document.getElementById('progressBar').value = "" + audio.currentTime * 100 / audio.duration;
+    // if (flag === true) {
+    //     let audio = getAudio();
+    //     document.getElementById('progressBar').value =""+ audio.currentTime * 100 / audio.duration;
+    // }
+    // else {
+    //     let audio = getAudio();
+    //     document.getElementById('progressBar').value =""+ audio.currentTime * 100 / audio.duration;
+    // }
+    
+    
+    
+}
+let resetPreogressBar = () => {
+    document.getElementById('progressBar').value = 0;
+}
+let progressBarSliderChanges = () => {
+    let progress = document.getElementById('progressBar');
+    let audio = getAudio();
+    audio.currentTime = progress.value / 100 * audio.duration;
+}
 let setView = () => {
     setBackground();
     showAudioView();
     enableDisableButtons();
     showHideButtons();
+    handleDiskRotation();
+}
+let handleDiskRotation = () => {
+    if (getAudio().paused) {
+        document.getElementsByClassName("disk-image")[audioIndex].classList.remove('rotate360');
+    } else
+        document.getElementsByClassName("disk-image")[audioIndex].classList.add('rotate360');
+
+}
+let handleAudioEnd = () => {
+    setView();
 }

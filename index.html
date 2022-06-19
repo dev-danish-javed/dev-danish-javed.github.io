@@ -2,45 +2,135 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="./Images/fevicon.png">
-    <link rel="stylesheet" href="./Css/CommonStyles.css">
-    <link rel="stylesheet" href="./Css/index.css">
-    <title>Danish's Index</title>
+
+    <title>Danish Javed</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Index css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Font Awsome v5.8 css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- font aesome v4.7 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon2.png">
+
 </head>
 
 <body>
-    
-    
-
-    <div class="frame d-none">
-        <a href="./Audio Tests/">
-            <h1>Audio Test</h1>
-        </a>
-    
-    </div>
-    <div class="screen-center">
-        
-        <div class=" main d-flex flex-column align-items-center justify-content-center">
-            <span class="display-1 pb-5 app-drop-shadow " onclick="showRough()">I am working on it ...</span>
-            <img class="app-drop-shadow " src="./Images/Working Bitmoji.png" alt="Image Unavailable">
-        </div> 
-        
-        <div class="d-flex flex-column d-none frame">
-            <iframe src="./Parallex/index.html" title="Paralex" class="link-frame"></iframe>
-            <a href="./Parallex/" class="link align-self-center app-drop-shadow"><button class="">>>></button></a>
+    <div class="home-page-layout d-flex flex-wrap">
+        <div class="home-page-element intro w-100">
+            <div class="display-3">Hi, I'm <span class="display-1 text-danger font-dancing-script">Danish</span>.</div>
         </div>
-        
-         
+        <div class="row">
+            <table>
+                <tr>
+                    <td>
+                        <div class="home-page-element bio col">
+                            <span>
+                                I am a software developer and work in web. I have understanding of Java, basic
+                                knowladge in angular and I'm a beginner in react.
+                                <br><br>
+                                I aspire to be a full stack developer with Java,
+                                react and mongo db.
+                            </span>
+
+                        </div>
+                    </td>
+                    <td rowspan="2">
+                        <div class="home-page-element pic col">
+                            <div class="center-content">
+                                <div class="img-container">
+                                    <img class="mx-auto" src="./images/My Pic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="home-page-element skills col">
+                            <div class="row mx-md-5">
+
+                                <span class=" fw-bolder ms-4 mt-3">My Skills <i class="fa-solid fa-brain-circuit"></i>
+                                </span>
+                                <hr>
+                                <div class="col">
+                                    <ul>
+                                        <li><i class='fab fa-java font-larger text-shadow-large'></i> Java</li>
+                                        <li><i class="fa fa-leaf"></i> Springboot (Beginner)</li>
+                                        <li><i class="fab fa-js"></i> Javascript</li>
+                                        <li> <i class="fab fa-react text-shadow-large"></i> React (Beginner)</li>
+                                        <li> <i class="fab fa-angular"></i> Angular (Basic)</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><i class="fab fa-html5"></i> Html</li>
+                                        <li><i class="fab fa-css3"></i> CSS</li>
+                                        <li> <i class="fab fa-bootstrap"></i> Bootstrap</li>
+                                        <li><i class="fa fa-database"></i> SQL (Basic)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+
+        <div class="home-page-element buttons w-100">
+            <div class="center-content">
+
+                <div class="buttons-container w-100 ">
+                    <div class="font-larger fw-normal align-self-start fw-bold white-space-nowrap pb-5 ms-5">Know more
+                        about
+                        me :</div>
+                    <div class="d-flex justify-content-between mx-5">
+                        <button class="btn btn-outline-dark bg-gradient fw-bold w-25"
+                            onclick="window.open('https://www.linkedin.com/in/danish-javed-ba0158184/')">
+                            <i class="fa fa-linkedin-square font-larger"></i> Linked-In
+                        </button>
+
+                        <button class="btn btn-outline-dark bg-gradient fw-bold w-25"
+                            onclick="window.open('https://stackoverflow.com/users/11842836/danish-javed')">
+                            <i class="fa fa-stack-overflow font-larger"></i> StackOverflow
+                        </button>
+                        <button class="btn btn-outline-dark bg-gradient fw-bold w-25"
+                            onclick="window.open('https://github.com/danjaved')">
+                            <i class="fa fa-github font-larger"></i> Github </button>
+                    </div>
+                    <div class="row mx-5 mt-5">
+                        <a class="btn btn-lg btn-outline-dark bg-gradient fw-bold text-shadow-none"
+                            href="./document/Danish Javed.pdf" download>
+                            <i class="fa fa-file-pdf-o font-larger"></i> Get My Resume </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
     </div>
 
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>    
-        <script src="./Js/index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
