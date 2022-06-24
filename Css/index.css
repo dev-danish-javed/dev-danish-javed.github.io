@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap");
 body {
-     animation: body-color-change 2s infinite alternate;
+     
      height: 98vh;
      width: 100vw;
      font-family: "Ubuntu", sans-serif;
 }
+.background-color-change{
+     animation: body-color-change 2s infinite alternate;
+}
 @keyframes body-color-change {
      0% {
-         background: rgb(205, 253, 255);
+         background: rgb(255, 246, 191);
      }
      100% {
            background: rgb(237, 255, 187);
@@ -38,8 +41,6 @@ body {
 }
 .home-page-layout {
      display: grid;
-     /* grid-template-rows: 1.5fr 0.5fr 1.5fr 2fr;
-     grid-template-columns: 1fr 1fr 1fr; */
      height: 100%;
      width: 98%;
 }
@@ -49,17 +50,9 @@ body {
      text-shadow: 1px 1px 5px grey;
      /* border: 2px solid red;; */
 }
-.home-page-layout .home-page-element.intro {
-  
-}
 .home-page-layout .home-page-element.bio {
      
      font-size: x-large;
-     /* display: flex;
-     align-items: flex-end; */
-}
-.home-page-layout .home-page-element.pic {
-  
 }
 .home-page-layout .home-page-element.pic .img-container {
      filter: drop-shadow(5px 5px 20px black);
