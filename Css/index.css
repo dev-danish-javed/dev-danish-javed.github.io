@@ -8,7 +8,7 @@ body {
 }
 body.dark {
      color: ghostwhite;
-     background-color: #00020a;
+     background-color: #000107;
 }
 
 .center-content {
@@ -27,6 +27,9 @@ body.dark {
 .text-shadow-large {
      text-shadow: 2px 2px 8px black;
 }
+ .dark .text-shadow-large{
+     text-shadow: 2px 2px 10px ghostwhite;
+}
 .text-shadow-none {
      text-shadow: none;
 }
@@ -41,7 +44,7 @@ body.dark {
 .home-page-layout .home-page-element {
      padding-left: 2rem;
      padding-right: 1rem;
-     text-shadow: 1px 1px 5px rgb(92, 92, 92);
+     text-shadow: 1px 1px 5px rgb(202, 202, 202);
      /* border: 2px solid red;; */
 }
 .dark .home-page-layout .home-page-element {
@@ -89,6 +92,6 @@ body.dark {
 .red-text{
      color: red;
 }
-.themeChanger{
-     transform: translatey(-50px);
+.cursor-pointer{
+     cursor: pointer;
 }
