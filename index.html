@@ -25,10 +25,19 @@
     <script src="./Js/index.js"></script>
 </head>
 
-<body class="background-color-change">
-    <div class="home-page-layout d-flex flex-wrap">
-        <div class="home-page-element intro w-100">
-            <div class="display-3">Hi, I'm <span class="display-1 text-danger font-dancing-script">Danish</span>.</div>
+<body class="">
+   
+    <div id="main-contents" class="home-page-layout d-flex flex-wrap mt-5 mt-lg-0">
+        <div class="home-page-element intro w-100 ">
+            <div class="display-3 w-100">Hi, I'm <span class="display-1 red-text font-dancing-script">Danish </span>.
+            <span class="fs-1 float-end ">
+                <label for="themeToggler">
+                    <i id="lightThemeIcon" class="far fa-sun text-light d-none "></i>
+                    <input type="checkbox" class="d-none" id="themeToggler" title="themeToggler" onchange="toogleMode()">
+                    <i id="darkThemeIcon" class="fas fa-moon d-inline"></i>
+                </label>
+            </span>
+            </div>
         </div>
         <div class="row">
             <table>
@@ -46,10 +55,10 @@
                         </div>
                     </td>
                     <td rowspan="2">
-                        <div class="home-page-element pic col d-none d-lg-block">
+                        <div class="home-page-element pic col d-none d-md-block d-lg-block">
                             <div class="center-content">
                                 <div class="img-container">
-                                    <img class="mx-auto" onclick="toogleMode()" src="./Images/My Pic.png" alt="">
+                                    <img class="mx-auto" src="./Images/My Pic.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -91,7 +100,7 @@
         </div>
 
 
-        <div class="home-page-element buttons w-100">
+        <div id="buttonContainer" class="home-page-element buttons w-100">
             <div class="center-content">
 
                 <div class="buttons-container w-100 ">

@@ -1,22 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap");
 body {
-     
-     height: 98vh;
+     height: 100vh;
      width: 100vw;
      font-family: "Ubuntu", sans-serif;
+     transition: all 1s;
+     background-color: beige;
 }
-.background-color-change{
-     animation: body-color-change 2s infinite alternate;
+body.dark {
+     color: ghostwhite;
+     background-color: #00020a;
 }
-@keyframes body-color-change {
-     0% {
-         background: rgb(255, 246, 191);
-     }
-     100% {
-           background: rgb(237, 255, 187);
-          
-     }
-}
+
 .center-content {
      display: flex;
      justify-content: center;
@@ -40,18 +34,21 @@ body {
      white-space: nowrap;
 }
 .home-page-layout {
-     display: grid;
+     /* display: grid; */
      height: 100%;
      width: 98%;
 }
 .home-page-layout .home-page-element {
      padding-left: 2rem;
      padding-right: 1rem;
-     text-shadow: 1px 1px 5px grey;
+     text-shadow: 1px 1px 5px rgb(92, 92, 92);
+     /* border: 2px solid red;; */
+}
+.dark .home-page-layout .home-page-element {
+     text-shadow: 1px 1px 6px rgb(255, 255, 255);
      /* border: 2px solid red;; */
 }
 .home-page-layout .home-page-element.bio {
-     
      font-size: x-large;
 }
 .home-page-layout .home-page-element.pic .img-container {
@@ -79,14 +76,19 @@ body {
      filter: grayscale(0);
 }
 .home-page-layout .home-page-element.skills {
-    
      font-size: x-large;
 }
 .home-page-layout .home-page-element.skills ul {
      list-style: none;
 }
 
-
 .home-page-layout .home-page-element.buttons .btn {
      box-shadow: 1px 1px 6px grey;
+}
+
+.red-text{
+     color: red;
+}
+.themeChanger{
+     transform: translatey(-50px);
 }
