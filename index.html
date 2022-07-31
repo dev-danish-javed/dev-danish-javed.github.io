@@ -9,137 +9,50 @@
     <title>Danish Javed</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <!-- Index css -->
-    <link rel="stylesheet" href="./Css/index.css">
-    <!-- Font Awsome v5.8 css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- font aesome v4.7 css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- font aesome v4.7 css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./Images/favico.png">
 
-    <link rel="icon" type="image/x-icon" href="./Images/favicon2.png">
-    <script src="./Js/index.js"></script>
+    <style>  
+    body{
+        background-color: rgb(0, 10, 9);
+    }      
+        a{
+            color:turquoise !important;
+            border: 2px solid turquoise !important;
+            text-transform: capitalize;
+        }
+        a:hover{
+            background-color: turquoise!important;
+            color:black !important;
+            font-weight: 500;
+        }
+        .text-accent-color{
+            color: turquoise;
+        }
+    </style>
+
 </head>
 
-<body class="">
-   
-    <div id="main-contents" class="home-page-layout d-flex flex-wrap mt-5 mt-lg-0 d-none">
-        <div class="home-page-element intro w-100 ">
-            <div class="display-3 w-100">Hi, I'm <span class="display-1 red-text font-dancing-script">Danish </span>.
-            <span class="fs-1 float-end">
-                <label for="themeToggler" class="cursor-pointer">
-                    <i id="lightThemeIcon" class="far fa-sun text-light d-none "></i>
-                    <input type="checkbox" class="d-none" id="themeToggler" title="themeToggler" onchange="toogleMode()">
-                    <i id="darkThemeIcon" class="fas fa-moon d-inline"></i>
-                </label>
-            </span>
-            </div>
-        </div>
-        <div class="row">
-            <table>
-                <tr>
-                    <td>
-                        <div class="home-page-element bio col">
-                            <span>
-                                I am a software developer and work in web. I have understanding of Java, basic
-                                knowladge in angular and I'm a beginner in react.
-                                <br><br>
-                                I aspire to be a full stack developer with Java,
-                                react and mongo db.
-                            </span>
+<body>  
 
-                        </div>
-                    </td>
-                    <td rowspan="2">
-                        <div class="home-page-element pic col d-none d-md-block d-lg-block ">
-                            <div class="center-content">
-                                <div class="img-container">
-                                    <img class="mx-auto" src="./Images/My Pic.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="home-page-element skills col">
-                            <div class="row mx-md-5">
-
-                                <span class=" fw-bolder ms-4 mt-3">My Skills <i class="fa-solid fa-brain-circuit"></i>
-                                </span>
-                                <hr>
-                                <div class="col">
-                                    <ul>
-                                        <li><i class='fab fa-java font-larger text-shadow-large'></i> Java</li>
-                                        <li><i class="fa fa-leaf"></i><sapn class="fs-4"> Springboot</sapn>  <span class="d-none d-lg-inline">(Beginner)</span></li>
-                                        <li><i class="fab fa-js"></i> Javascript</li>
-                                        <li> <i class="fab fa-react "></i> React <span class="d-none d-lg-inline">(Beginner)</span></li>
-                                        <li> <i class="fab fa-angular text-shadow-large"></i> Angular <span class="d-none d-lg-inline">(Basic)</span></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <ul>
-                                        <li><i class="fab fa-html5"></i> Html</li>
-                                        <li><i class="fab fa-css3"></i> CSS</li>
-                                        <li> <i class="fab fa-bootstrap"></i> Bootstrap</li>
-                                        <li><i class="fa fa-database"></i> SQL <span class="d-none d-lg-inline">(Basic)</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-
-
-        </div>
-
-
-        <div id="buttonContainer" class="home-page-element buttons w-100">
-            <div class="center-content">
-
-                <div class="buttons-container w-100 ">
-                    <div class="font-larger fw-normal align-self-start fw-bold white-space-nowrap pb-5 ms-5">Know more
-                        about
-                        me :</div>
-                    <div class="d-flex justify-content-between mx-5 flex-column flex-lg-row gap-3 ">
-                        <button class="btn btn-outline-dark bg-gradient fw-bold col-lg-3 "
-                            onclick="window.open('https://www.linkedin.com/in/danish-javed-ba0158184/')">
-                            <i class="fa fa-linkedin-square font-larger"></i> Linked-In
-                        </button>
-
-                        <button class="btn btn-outline-dark bg-gradient fw-bold col-lg-3"
-                            onclick="window.open('https://stackoverflow.com/users/11842836/danish-javed')">
-                            <i class="fa fa-stack-overflow font-larger"></i> StackOverflow
-                        </button>
-                        <button class="btn btn-outline-dark bg-gradient fw-bold col-lg-3"
-                            onclick="window.open('https://github.com/danjaved')">
-                            <i class="fa fa-github font-larger"></i> Github </button>
-                    </div>
-                    <div class="row mx-5 mt-5">
-                        <a class="btn btn-lg btn-outline-dark bg-gradient fw-bold text-shadow-none"
-                            href="./document/Danish Javed.pdf" download>
-                            <i class="fa fa-file-pdf-o font-larger"></i> Get My Resume </a>
-                    </div>
-                </div>
-
-
-
+    <div class="vh-100 text-white d-flex justify-content-center align-items-center">
+        <div class="main-content d-flex flex-column gap-3">
+            <div class="display-3">Hi, I am <span class="text-accent-color">Danish</span>.</div>
+            <div class="fs-3">I'm glad you found me <span class="text-accent-color">intresting</span> .</div>
+            <div class="w-100">
+                <a class="btn w-100" href="https://danjaved.github.io/portfolio/"> 
+                <i class="fa-solid fa-up-right-from-square me-2"></i> Check my portfolio here 
+                </a>
             </div>
         </div>
     </div>
-
-    <h1>YUP</h1>
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
 </body>
 
